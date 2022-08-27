@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors,Fonts,Colors,Borders & Backgrounds</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        /* Colors */
+        #FirstPara{
+            color:blueviolet; /* Color by name */
+        }
+
+        #SecondPara{
+            color: rgb(223, 130, 54); /* Color by rgb value */
+        }
+
+        #ThirdPara{
+            color: white;
+            background-color: #ff4532; /* Color by hex value */
+        }
+        /* Element selector */
+        p{
+            border: 2px solid red;
+        }
+        
+        /* Id selector */
+        #firstPara{
+            color: green;
+        }
+        
+
+        /* Class selector */
+        .bgBlue{
+            color: yellow;
+            background-color: blue;
+        }
+
+        /* Grouping selector */
+        footer, span{
+            background-color: pink; 
+        }
+        p{
+            font-family:'Ubuntu', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 33px; /* 1/96th of an inch */
+            line-height: 1.3em; 
+        }
+
+        span{
+            font-weight: bold;
+            font-style: italic;
+        }
+ #ParaFirst{
+    background-color: red;
+    height: 100px;
+    width:455px;
+    border: 4px solid green;
+    /* border-width: 4px;
+    border-color: green;
+    border-style: solid;  */
+    border-radius: 11px;
+}
+
+#ParaSecond{
+    background-color: rgb(58, 243, 98);
+    height: 100px;
+    width:455px; 
+    border-top: 2px solid rgb(231, 22, 231);
+    border-right: 2px solid rgb(18, 10, 133);
+    border-bottom: 2px solid rgba(9, 144, 27, 0.774);
+    border-left: 2px solid rgb(156, 42, 13);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 14px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 24px;
+}
+
+#ParaThird{
+    height: 500px;
+    width:455px; 
+    background-image: url('https://cdn.pixabay.com/photo/2020/09/19/19/37/landscape-5585247_960_720.jpg');
+    border: 2px solid red;
+    background-repeat: no-repeat; /* repeat-x and repeat-y will make it repeat on x and y axis */
+    /* background-position: 192px 34px; */
+    background-position: center center;
+    /* background-position: bottom right; */
+    /* background-position: top center; */ 
+}
+    </style>
+</head>
+<body>
+    <h2>CSS Selectors</h2>
+    <p id="firstPara">This is a simple paragraph to demonstrate css selectors</p>
+    <p id="secondPara" class="redElement bgBlue">This is a another simple paragraph to demonstrate css selectors</p>
+    <div>
+        <p>This is yet another simple paragraph inside div to demonstrate css selectors</p>
+        <span>this is span</span>
+    </div>
+    <footer>This is footer</footer>
+    <h2>CSS Fonts</h2>
+    <p>Lets play with <span>fonts</span>. It is very exciting</p>
+    <h2>Colors</h2>
+    <p id="FirstPara">This is a paragraph to show colors by NAME </p>
+    <p id="SirstPara">This is a paragraph to show colors by RGB</p>
+    <p id="ThirdPara">This is a paragraph to show colors by HEX Value</p>
+    <h2>Borders & Backgrounds</h2>
+<h3>This is heading</h3>
+<p id="ParaFirst">This is a paragraph</p>
+
+<h3>This is second heading</h3>
+<p id="ParaSecond">This is my second paragraph</p>
+
+<h3>This is third heading</h3>
+<p id="ParaThird">This is my third paragraph</p>
+</body>
+</html>
+
+
+
